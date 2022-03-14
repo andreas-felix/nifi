@@ -203,7 +203,7 @@ public class DefaultMarkLogicDatabaseClientService extends AbstractControllerSer
             try {
                 if (sslService.isTrustStoreConfigured()) {
                     final TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
-                    final KeyStore trustStore = KeyStoreUtils.getTrustStore(sslService.getTrustStoreType());
+                    final KeyStore trustStore = KeyStoreUtils.getKeyStore(sslService.getTrustStoreType());
                     try (final InputStream is = new FileInputStream(sslService.getTrustStoreFile())) {
                         trustStore.load(is, sslService.getTrustStorePassword().toCharArray());
                     }

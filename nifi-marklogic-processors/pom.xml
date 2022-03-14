@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.apache.nifi</groupId>
         <artifactId>nifi-marklogic-bundle</artifactId>
-        <version>1.9.1.7</version>
+        <version>1.9.1.8-ebcont</version>
     </parent>
 
     <artifactId>nifi-marklogic-processors</artifactId>
@@ -42,7 +42,8 @@
 		<dependency>
 		    <groupId>org.json</groupId>
 		    <artifactId>json</artifactId>
-		    <version>20180130</version>
+		    <version>20211205</version>
+            <scope>provided</scope>
 		</dependency>
         <dependency>
             <groupId>org.apache.nifi</groupId>
@@ -71,6 +72,10 @@
                 <exclusion>
                     <groupId>com.beust</groupId>
                     <artifactId>jcommander</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>

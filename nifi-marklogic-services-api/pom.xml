@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.apache.nifi</groupId>
         <artifactId>nifi-marklogic-bundle</artifactId>
-        <version>1.9.1.7</version>
+        <version>1.9.1.8-ebcont</version>
     </parent>
 
     <artifactId>nifi-marklogic-services-api</artifactId>
@@ -54,7 +54,16 @@
                     <groupId>org.jdom</groupId>
                     <artifactId>jdom2</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-web</artifactId>
+                </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.3.5</version>
         </dependency>
     </dependencies>
 

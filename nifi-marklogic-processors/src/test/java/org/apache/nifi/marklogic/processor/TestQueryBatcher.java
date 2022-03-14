@@ -151,6 +151,31 @@ class TestQueryBatcher implements QueryBatcher {
     }
 
     @Override
+    public QueryBatcher withBatchSize(int docBatchSize, int docToUriBatchRatio) {
+        return null;
+    }
+
+    @Override
+    public int getDocToUriBatchRatio() {
+        return 0;
+    }
+
+    @Override
+    public int getDefaultDocBatchSize() {
+        return 0;
+    }
+
+    @Override
+    public int getMaxUriBatchSize() {
+        return 0;
+    }
+
+    @Override
+    public int getMaxDocToUriBatchRatio() {
+        return 0;
+    }
+
+    @Override
     public QueryBatcher withThreadCount(int threadCount) {
         this.threadCount = threadCount;
         return this;
