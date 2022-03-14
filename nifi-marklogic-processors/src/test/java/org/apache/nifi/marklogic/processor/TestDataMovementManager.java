@@ -21,12 +21,7 @@ import java.util.Iterator;
 import com.marklogic.client.DatabaseClient.ConnectionType;
 import com.marklogic.client.datamovement.*;
 import com.marklogic.client.io.marker.ContentHandle;
-import com.marklogic.client.query.QueryDefinition;
-import com.marklogic.client.query.RawCombinedQueryDefinition;
-import com.marklogic.client.query.RawCtsQueryDefinition;
-import com.marklogic.client.query.RawStructuredQueryDefinition;
-import com.marklogic.client.query.StringQueryDefinition;
-import com.marklogic.client.query.StructuredQueryDefinition;
+import com.marklogic.client.query.*;
 
 /*
  * Methods of DataMovementManager interface are minimally implemented for the purpose of testing.
@@ -67,6 +62,11 @@ class TestDataMovementManager implements DataMovementManager {
 
     @Override
     public WriteBatcher newWriteBatcher() {
+        return null;
+    }
+
+    @Override
+    public QueryBatcher newQueryBatcher(CtsQueryDefinition query) {
         return null;
     }
 
