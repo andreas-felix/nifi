@@ -342,9 +342,9 @@ public class PutMarkLogic extends AbstractMarkLogicProcessor {
         try {
             FlowFile flowFile = session.get();
             if (flowFile == null) {
-                getLogger().info("Flushing the WriteBatcher asynchronously in case a number of documents less than batchSize are waiting to be written");
+                //getLogger().info("Flushing the WriteBatcher asynchronously in case a number of documents less than batchSize are waiting to be written");
                 flushWriteBatcherAsync(this.writeBatcher);
-                getLogger().info("Calling yield() on the ProcessContext");
+                //getLogger().info("Calling yield() on the ProcessContext");
                 context.yield();
             } else {
                 String duplicateHandler = context.getProperty(DUPLICATE_URI_HANDLING).getValue();
