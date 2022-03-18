@@ -35,7 +35,8 @@
         <marklogicnar.version>1.9.1.8-ebcont</marklogicnar.version>
         <marklogicclientapi.version>5.5.2-ebcont</marklogicclientapi.version>
         <mljavaclientutil.version>4.3.0</mljavaclientutil.version>
-        <marklogicdatamovementcomponents.version>2.4.0</marklogicdatamovementcomponents.version>
+        <marklogicdatamovementcomponents.version>2.4.1-ebcont</marklogicdatamovementcomponents.version>
+        <marklogicdatahub.version>5.4.2</marklogicdatahub.version>
     </properties>
 
     <modules>
